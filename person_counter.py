@@ -101,7 +101,7 @@ def main():
         rects = non_max_suppression_fast(boundingboxes, 0.3)
 
         objects = tracker.update(rects)
-        cv2.line(frame, ( 0 ,H //2), (W , H //2 ), (0, 0, 255), 2)
+#         cv2.line(frame, ( 0 ,H //2), (W , H //2 ), (0, 0, 255), 2)
 
 
         for (objectId, bbox) in objects.items():
